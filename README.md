@@ -36,7 +36,7 @@ The application also provides fallback behavior for important features so that t
 ## ✨ Features
 
 ### 🌎 Destination Explorer
-Screenshots/Dashboard.png
+https://github.com/hsvindhushree/Travel-web-Application/blob/main/Screenshots/Dashboard.png
 - Browse available travel destinations
 - Search destinations
 - Filter destinations
@@ -44,28 +44,28 @@ Screenshots/Dashboard.png
 - Explore attractions, activities, and destination information
 
 ### 🏛️ Famous Places
-
+https://github.com/hsvindhushree/Travel-web-Application/blob/main/Screenshots/Famous%20Places.png
 - Discover famous places and attractions
 - View detailed information about places
 - Display destination/place imagery
 - Interactive presentation instead of simple text lists
 
 ### 📍 Location Awareness
-
+https://github.com/hsvindhushree/Travel-web-Application/blob/main/Screenshots/weather.png
 - Request the user's current location
 - Reverse geocode the detected location
 - Search for locations manually
 - Handle location permission denial gracefully
 
 ### 🌤️ Real-Time Weather
-
+https://github.com/hsvindhushree/Travel-web-Application/blob/main/Screenshots/Explorer.png
 - Display current weather information
 - Show temperature and weather conditions
 - Support live weather data through external weather services
 - Provide fallback weather information when required
 
 ### 🤖 AI Travel Assistant
-
+https://github.com/hsvindhushree/Travel-web-Application/blob/main/Screenshots/ai-chatbot.png
 - Ask travel-related questions
 - Get destination recommendations
 - Ask about activities, food, places, and travel planning
@@ -73,7 +73,7 @@ Screenshots/Dashboard.png
 - Includes a fallback response system
 
 ### 🗺️ Itinerary Planner
-
+https://github.com/hsvindhushree/Travel-web-Application/blob/main/Screenshots/itinerary.png
 - Generate personalized travel itineraries
 - Organize plans day-by-day
 - Display activities in structured sections:
@@ -83,13 +83,15 @@ Screenshots/Dashboard.png
 - Present the itinerary in a readable UI rather than raw AI output
 
 ### ❤️ Saved Trips & Favorites
-
+https://github.com/hsvindhushree/Travel-web-Application/blob/main/Screenshots/itinerary.png
 - Save favorite destinations
 - Save planned trips
 - Access saved travel plans
 
 ### 📱 Responsive Design
-
+https://github.com/hsvindhushree/Travel-web-Application/blob/main/Screenshots/destination-detail.png
+https://github.com/hsvindhushree/Travel-web-Application/blob/main/Screenshots/destination-detail-2.png
+https://github.com/hsvindhushree/Travel-web-Application/blob/main/Screenshots/destination-detail-3.png
 - Desktop responsive layout
 - Tablet responsive layout
 - Mobile responsive layout
