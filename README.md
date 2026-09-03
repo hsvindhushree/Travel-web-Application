@@ -1,81 +1,169 @@
-# ✈️ Wanderlust — Next-Gen AI Travel Explorer & Day-by-Day Itinerary Planner
+# 🌍 Travel Web Application
 
-A design-forward, highly interactive travel web application built for the **designesthetics Front-End Developer Assignment**.
+A modern and responsive travel web application built with React that helps users explore destinations around the world, discover famous places, check real-time weather, get AI-powered travel assistance, and generate personalized itineraries.
 
----
+## 🔗 Live Demo
 
-## 🌟 Key Features & Requirements Matrix
+https://travel-web-application-lemon.vercel.app
 
-| Requirement                  | Implementation Details                                                                                                                                                                                                         |
-| :--------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **01. Landing Experience**   | Ambient looping hero background video with cinematic dark glass contrast, live location weather pill, quick stats, and search bar.                                                                                             |
-| **02. Destination Explorer** | Interactive grid of 12+ curated global destinations. Search bar, continent & category filter tabs (_All, City, Beach, Cultural, Historic, Nature_), price level indicator, and sorting by rating / budget.                     |
-| **03. Famous Places**        | Notable sights presented with high-resolution photography, recommended visit duration, ticket cost, star ratings, and key highlight bullet points.                                                                             |
-| **04. Location Awareness**   | Browser Geolocation API integration ("Use My Device Location") + Open-Meteo live geocoding city search and popular global hubs shortcut pills.                                                                                 |
-| **05. Real-Time Weather**    | Live real-time temperature, condition, humidity %, wind speed (km/h), and 5-day outlook using **Open-Meteo API** (zero-config fallback) or **OpenWeather API** (if key provided). Celsius / Fahrenheit metric toggle included. |
-| **06. Dynamic Imagery**      | Dynamically loads high-res landscape photos via **Unsplash API** with curated high-definition CDN fallbacks.                                                                                                                   |
-| **07. AI Chatbot**           | **Google Gemini 2.5 Flash API** conversational travel assistant (`VITE_GEMINI_API_KEY` supported, plus built-in smart travel engine fallback). Preset prompt shortcut pills for fast Q&A.                                      |
-| **08. Itinerary Planning**   | Bespoke trip builder generating structured **Day-by-Day visual timelines** (Morning, Afternoon, Evening cards, estimated costs, secret local tips, confetti celebration, and PDF/Print export).                                |
+## 💻 GitHub Repository
+
+https://github.com/hsvindhushree/Travel-web-Application
 
 ---
 
-## 🛠️ Tech Stack
+## 📌 Project Overview
 
-- **Framework**: React 19 + Vite 8
-- **Styling**: Tailwind CSS v4 + Glassmorphism design system + Custom keyframe animations
-- **Icons**: Lucide Icons (`lucide-react`)
-- **Animations & Effects**: Framer Motion & `canvas-confetti`
-- **APIs**:
-  - Weather: Open-Meteo Live API & OpenWeatherMap API
-  - Geocoding: Open-Meteo Geocoding & HTML5 Geolocation API
-  - AI Assistant: Google Gemini API (gemini-2.5-flash)
-  - Images: Unsplash REST API
+The Travel Web Application is designed to provide users with an interactive platform for discovering and planning trips.
+
+Users can:
+
+- Explore destinations around the world
+- Search and filter destinations
+- View detailed destination information
+- Discover famous places
+- Get current weather information
+- Detect or search for their location
+- Ask travel-related questions using an AI chatbot
+- Generate day-by-day travel itineraries
+- Save favorite destinations and trips
+- Use the application across desktop, tablet, and mobile devices
+
+The application also provides fallback behavior for important features so that the core experience remains usable even when optional external API keys are not configured.
 
 ---
 
-## 🚀 Getting Started & Local Setup
+## ✨ Features
 
-### 1. Clone & Install Dependencies
+### 🌎 Destination Explorer
 
-```bash
-cd travel-app
-npm install
-```
+- Browse available travel destinations
+- Search destinations
+- Filter destinations
+- View detailed information about individual destinations
+- Explore attractions, activities, and destination information
 
-### 2. Configure Environment Variables (Optional)
+### 🏛️ Famous Places
 
-Create a `.env` file in the root directory (or use the in-app **⚙️ Settings Gear** modal):
+- Discover famous places and attractions
+- View detailed information about places
+- Display destination/place imagery
+- Interactive presentation instead of simple text lists
+
+### 📍 Location Awareness
+
+- Request the user's current location
+- Reverse geocode the detected location
+- Search for locations manually
+- Handle location permission denial gracefully
+
+### 🌤️ Real-Time Weather
+
+- Display current weather information
+- Show temperature and weather conditions
+- Support live weather data through external weather services
+- Provide fallback weather information when required
+
+### 🤖 AI Travel Assistant
+
+- Ask travel-related questions
+- Get destination recommendations
+- Ask about activities, food, places, and travel planning
+- Uses Gemini when an API key is available
+- Includes a fallback response system
+
+### 🗺️ Itinerary Planner
+
+- Generate personalized travel itineraries
+- Organize plans day-by-day
+- Display activities in structured sections:
+  - Morning
+  - Afternoon
+  - Evening
+- Present the itinerary in a readable UI rather than raw AI output
+
+### ❤️ Saved Trips & Favorites
+
+- Save favorite destinations
+- Save planned trips
+- Access saved travel plans
+
+### 📱 Responsive Design
+
+- Desktop responsive layout
+- Tablet responsive layout
+- Mobile responsive layout
+- Mobile-friendly navigation and interactions
+
+### 🎨 UI & Animations
+
+- Modern travel-focused interface
+- Smooth animations
+- Interactive components
+- Hover and transition effects
+- Framer Motion animations
+- Responsive visual design
+
+---
+
+## 🛠️ Technologies Used
+
+### Frontend
+
+- React
+- JavaScript
+- HTML5
+- CSS3
+
+### Build Tool
+
+- Vite
+
+### Libraries
+
+- Framer Motion
+- Lucide React
+- Canvas Confetti
+- Tailwind CSS
+
+### APIs & Services
+
+- Open-Meteo
+- OpenWeather
+- Google Gemini
+- Unsplash
+- Browser Geolocation API
+
+### Deployment
+
+- Vercel
+
+### Version Control
+
+- Git
+- GitHub
+
+---
+
+## 🔌 APIs & External Services
+
+The application integrates with external services for dynamic functionality.
+
+| Service | Purpose |
+|---|---|
+| Open-Meteo | Weather data and geocoding |
+| OpenWeather | Weather data |
+| Google Gemini | AI travel assistant and itinerary generation |
+| Unsplash | Dynamic destination/place images |
+| Browser Geolocation API | Detect user's current location |
+
+### API Key Configuration
+
+The application supports optional API keys through environment variables.
+
+Create a `.env` file in the project root:
 
 ```env
-VITE_GEMINI_API_KEY=your_gemini_api_key_here
-VITE_OPENWEATHER_API_KEY=your_openweather_key_here
-VITE_UNSPLASH_ACCESS_KEY=your_unsplash_access_key_here
-```
-
-> **Note**: The application works **100% out-of-the-box** without any mandatory API keys!
-
-### 3. Run Development Server
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:5173](http://localhost:5173) in your browser.
-
-### 4. Build for Production
-
-```bash
-npm run build
-```
-
----
-
-## 🎨 Design Philosophy
-
-- **Visual Excellence**: Built with a sleek dark slate theme (`#020617`), vibrant cyan & emerald neon accents, backdrop blur glassmorphism, and responsive grid layouts.
-- **Error & Edge State Handling**: Graceful loading skeletons, zero-result search feedback, location permission error handling, and API fallback indicators.
-- **Accessibility & Responsiveness**: Fully responsive across Mobile, Tablet, and Desktop displays.
-
----
-
-_Designed & Developed for designesthetics Assignment._
+VITE_OPENWEATHER_API_KEY=
+VITE_GEMINI_API_KEY=
+VITE_UNSPLASH_ACCESS_KEY=
