@@ -6,22 +6,22 @@ A design-forward, highly interactive travel web application built for the **desi
 
 ## 🌟 Key Features & Requirements Matrix
 
-| Requirement | Implementation Details |
-| :--- | :--- |
-| **01. Landing Experience** | Ambient looping hero background video with cinematic dark glass contrast, live location weather pill, quick stats, and search bar. |
-| **02. Destination Explorer** | Interactive grid of 12+ curated global destinations. Search bar, continent & category filter tabs (*All, City, Beach, Cultural, Historic, Nature*), price level indicator, and sorting by rating / budget. |
-| **03. Famous Places** | Notable sights presented with high-resolution photography, recommended visit duration, ticket cost, star ratings, and key highlight bullet points. |
-| **04. Location Awareness** | Browser Geolocation API integration ("Use My Device Location") + Open-Meteo live geocoding city search and popular global hubs shortcut pills. |
-| **05. Real-Time Weather** | Live real-time temperature, condition, humidity %, wind speed (km/h), and 5-day outlook using **Open-Meteo API** (zero-config fallback) or **OpenWeather API** (if key provided). Celsius / Fahrenheit metric toggle included. |
-| **06. Dynamic Imagery** | Dynamically loads high-res landscape photos via **Unsplash API** with curated high-definition CDN fallbacks. |
-| **07. AI Chatbot** | **Google Gemini 2.5 Flash API** conversational travel assistant (`VITE_GEMINI_API_KEY` supported, plus built-in smart travel engine fallback). Preset prompt shortcut pills for fast Q&A. |
-| **08. Itinerary Planning** | Bespoke trip builder generating structured **Day-by-Day visual timelines** (Morning, Afternoon, Evening cards, estimated costs, secret local tips, confetti celebration, and PDF/Print export). |
+| Requirement                  | Implementation Details                                                                                                                                                                                                         |
+| :--------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **01. Landing Experience**   | Ambient looping hero background video with cinematic dark glass contrast, live location weather pill, quick stats, and search bar.                                                                                             |
+| **02. Destination Explorer** | Interactive grid of 12+ curated global destinations. Search bar, continent & category filter tabs (_All, City, Beach, Cultural, Historic, Nature_), price level indicator, and sorting by rating / budget.                     |
+| **03. Famous Places**        | Notable sights presented with high-resolution photography, recommended visit duration, ticket cost, star ratings, and key highlight bullet points.                                                                             |
+| **04. Location Awareness**   | Browser Geolocation API integration ("Use My Device Location") + Open-Meteo live geocoding city search and popular global hubs shortcut pills.                                                                                 |
+| **05. Real-Time Weather**    | Live real-time temperature, condition, humidity %, wind speed (km/h), and 5-day outlook using **Open-Meteo API** (zero-config fallback) or **OpenWeather API** (if key provided). Celsius / Fahrenheit metric toggle included. |
+| **06. Dynamic Imagery**      | Dynamically loads high-res landscape photos via **Unsplash API** with curated high-definition CDN fallbacks.                                                                                                                   |
+| **07. AI Chatbot**           | **Google Gemini 2.5 Flash API** conversational travel assistant (`VITE_GEMINI_API_KEY` supported, plus built-in smart travel engine fallback). Preset prompt shortcut pills for fast Q&A.                                      |
+| **08. Itinerary Planning**   | Bespoke trip builder generating structured **Day-by-Day visual timelines** (Morning, Afternoon, Evening cards, estimated costs, secret local tips, confetti celebration, and PDF/Print export).                                |
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Framework**: React 19 + Vite 6
+- **Framework**: React 19 + Vite 8
 - **Styling**: Tailwind CSS v4 + Glassmorphism design system + Custom keyframe animations
 - **Icons**: Lucide Icons (`lucide-react`)
 - **Animations & Effects**: Framer Motion & `canvas-confetti`
@@ -78,4 +78,4 @@ npm run build
 
 ---
 
-*Designed & Developed for designesthetics Assignment.*
+_Designed & Developed for designesthetics Assignment._
