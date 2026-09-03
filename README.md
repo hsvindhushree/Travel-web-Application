@@ -36,7 +36,7 @@ The application also provides fallback behavior for important features so that t
 ## ✨ Features
 
 ### 🌎 Destination Explorer
-
+Screenshots/Dashboard.png
 - Browse available travel destinations
 - Search destinations
 - Filter destinations
